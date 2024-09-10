@@ -322,3 +322,89 @@ public class Main {
    - Trying to access private inner classes from outside their outer class.
 
 These examples should give a clear understanding of the different inner class types, their possibilities, and common pitfalls.
+
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+En Java, l'utilisation de `this` dans le cadre des **inner classes** (ou classes internes) peut être un peu plus complexe que dans les classes classiques, car il existe une distinction entre les instances de la classe interne et celles de la classe externe. Voici quelques utilisations et concepts clés :
+
+### 1. **Référence à l'instance de la classe interne :**
+Dans une classe interne, `this` fait référence à l'instance actuelle de la **classe interne**. Par exemple :
+
+```java
+class Outer {
+    class Inner {
+        void display() {
+            System.out.println(this); // Référence à l'instance de Inner
+        }
+    }
+}
+```
+
+Dans ce cas, `this` dans la méthode `display()` fait référence à l'instance de `Inner`.
+
+### 2. **Référence à l'instance de la classe externe :**
+Pour accéder à l'instance de la classe externe depuis une classe interne, Java permet d'utiliser la syntaxe suivante : `OuterClassName.this`. Cette syntaxe est utilisée lorsque vous souhaitez faire référence à l'instance de la **classe externe**.
+
+Exemple :
+
+```java
+class Outer {
+    private String message = "Hello from Outer class!";
+    
+    class Inner {
+        void display() {
+            System.out.println(Outer.this.message); // Référence à l'instance de Outer
+        }
+    }
+}
+```
+
+Ici, `Outer.this.message` permet d'accéder au membre `message` de la classe externe `Outer` depuis la classe interne `Inner`.
+
+### 3. **Utilisation pour désambiguïser les noms :**
+Si la classe interne a un champ ou une méthode qui a le même nom qu'un champ ou une méthode de la classe externe, vous pouvez utiliser `this` pour faire référence à l'instance appropriée. Par exemple :
+
+```java
+class Outer {
+    int x = 10;
+    
+    class Inner {
+        int x = 20;
+
+        void display() {
+            System.out.println(x);               // Affiche 20 (Inner's x)
+            System.out.println(this.x);          // Affiche 20 (Inner's x)
+            System.out.println(Outer.this.x);    // Affiche 10 (Outer's x)
+        }
+    }
+}
+```
+
+Dans cet exemple, `this.x` fait référence à la variable `x` de la classe `Inner`, tandis que `Outer.this.x` fait référence à la variable `x` de la classe `Outer`.
+
+### 4. **Accès aux méthodes de la classe externe :**
+De la même manière que pour les champs, une classe interne peut accéder aux méthodes de la classe externe via `OuterClassName.this.methodName()`.
+
+Exemple :
+
+```java
+class Outer {
+    void outerMethod() {
+        System.out.println("Method from Outer class");
+    }
+
+    class Inner {
+        void callOuterMethod() {
+            Outer.this.outerMethod();  // Appelle la méthode de la classe externe
+        }
+    }
+}
+```
+
+Ici, la classe interne appelle une méthode de la classe externe avec `Outer.this.outerMethod()`.
+
+### En résumé :
+- `this` dans une classe interne fait référence à l'instance de la classe interne.
+- `OuterClassName.this` est utilisé pour référencer l'instance de la classe externe.
+- Cette syntaxe permet de désambiguïser les noms lorsque les champs ou méthodes ont le même nom dans les deux classes.

@@ -91,3 +91,53 @@ A.B obj = outer.new B();  // Create an instance of B using the instance of A
      ```
 
 In summary, the key difference is that a **static nested class** can be instantiated without an instance of the outer class, while a **non-static inner class** requires an instance of the outer class for instantiation.
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+The difference in instantiation comes from the fact that `class B` is a **static nested class**, which behaves differently from non-static inner classes.
+
+Let’s break down the reasoning for each case:
+
+### **1. `B obj1 = new B();`**
+
+This works because `B` is a **static** nested class. A static nested class can be instantiated without the need for an instance of the outer class (`Test002086`). In this case, the `static` keyword means that `B` exists independently of any instance of the outer class, so you can instantiate `B` directly like this.
+
+### **3. `B obj3 = new Test002086().new B();`**
+
+This does **not work** because you're trying to instantiate `B` as if it were a **non-static** inner class. If `B` were non-static, it would require an instance of the outer class `Test002086` to be created, but since `B` is **static**, this is unnecessary and incorrect.
+
+- A **non-static** inner class (without the `static` keyword) would need an instance of the outer class to access it, like this:
+
+    ```java
+    OuterClass outer = new OuterClass();
+    OuterClass.InnerClass inner = outer.new InnerClass();
+    ```
+
+    However, since `B` is **static**, no outer class instance is needed, and the syntax in line 3 is invalid. A **static nested class** doesn't maintain a reference to an instance of the enclosing class.
+
+### **4. `Test002086.B obj4 = new Test002086().new B();`**
+
+This also **does not work** for the same reason. Even though you're explicitly referencing the outer class (`Test002086`), the `new Test002086().new B()` syntax is used for **non-static** inner classes, which require an instance of the outer class. But because `B` is a **static nested class**, you don't need an instance of the outer class (`Test002086`) to create an instance of `B`.
+
+### **Why 1 Works and 3, 4 Do Not:**
+
+- In **case 1**, you're directly instantiating `B` as a **static** class, which is allowed because it is independent of any instance of `Test002086`.
+
+- In **cases 3 and 4**, you're trying to instantiate `B` as if it were a **non-static inner class**, which would require an instance of the outer class (`Test002086`). Since `B` is static, it does not require such an instance, making the syntax you're using in these cases invalid.
+
+### General Rule:
+
+- **Static Nested Class:**  
+  A static nested class behaves like a top-level class that is *nested inside another class*. It does **not require** an instance of the enclosing class to be instantiated.  
+  - **Correct syntax:** `OuterClass.StaticNestedClass nested = new OuterClass.StaticNestedClass();`
+  
+- **Non-Static Inner Class:**  
+  A non-static inner class requires an instance of the outer class to be instantiated. It implicitly holds a reference to the enclosing instance.  
+  - **Correct syntax:** `OuterClass.InnerClass inner = outerInstance.new InnerClass();`
+
+Since `B` is a **static nested class**, you should instantiate it directly without creating an instance of `Test002086`.
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+La règle pour instancier les classes inner static : un seul new au début 
+new B();
+new A.B();

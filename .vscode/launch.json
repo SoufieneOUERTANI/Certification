@@ -1,0 +1,98 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Test003028",
+            "request": "launch",
+            "mainClass": "Test003028",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "Test003015",
+            "request": "launch",
+            "mainClass": "Test003015",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "Test003012",
+            "request": "launch",
+            "mainClass": "Test003012",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "CombinedExample",
+            "request": "launch",
+            "mainClass": "CombinedExample",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Test003004",
+            "request": "launch",
+            "mainClass": "Test003004",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "Test003005",
+            "request": "launch",
+            "mainClass": "Test003005",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "Test003006",
+            "request": "launch",
+            "mainClass": "Test003006",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "Test003007",
+            "request": "launch",
+            "mainClass": "Test003007",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "Test003008",
+            "request": "launch",
+            "mainClass": "Test003008",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "Test003009",
+            "request": "launch",
+            "mainClass": "Test003009",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "Test003010",
+            "request": "launch",
+            "mainClass": "Test003010",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "Test003011",
+            "request": "launch",
+            "mainClass": "Test003011",
+            "projectName": "Certification_490f2030"
+        }
+    ]
+}

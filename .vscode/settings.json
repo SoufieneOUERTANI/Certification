@@ -1,4 +1,15 @@
 {
-    "java.project.sourcePaths": [],
+    "java.project.sourcePaths": [
+        "Test003042/src",
+        "Test003041/src",
+        "Test003040/src",
+        "Test003039/src",
+        "Test003038/src",
+        "Test003036/src",
+        "Test003035/src",
+        "Test003034/src",
+        "Test003033/src",
+        "Test003044/src"
+    ],
     "java.project.referencedLibraries": []
 }

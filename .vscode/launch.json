@@ -6,92 +6,93 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Test003028",
+            "name": "Person",
             "request": "launch",
-            "mainClass": "Test003028",
+            "mainClass": "Person",
             "projectName": "Certification_490f2030"
         },
         {
             "type": "java",
-            "name": "Test003015",
+            "name": "Test003042",
             "request": "launch",
-            "mainClass": "Test003015",
+            "mainClass": "Test003042",
             "projectName": "Certification_490f2030"
         },
         {
             "type": "java",
-            "name": "Test003012",
+            "name": "Test003041",
             "request": "launch",
-            "mainClass": "Test003012",
+            "mainClass": "Test003041",
             "projectName": "Certification_490f2030"
         },
         {
             "type": "java",
-            "name": "CombinedExample",
+            "name": "Test003039",
             "request": "launch",
-            "mainClass": "CombinedExample",
+            "mainClass": "Test003039",
             "projectName": "Certification_490f2030"
         },
         {
             "type": "java",
-            "name": "Current File",
+            "name": "Test003038",
             "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Test003004",
-            "request": "launch",
-            "mainClass": "Test003004",
+            "mainClass": "Test003038",
             "projectName": "Certification_490f2030"
         },
         {
             "type": "java",
-            "name": "Test003005",
+            "name": "Test003036",
             "request": "launch",
-            "mainClass": "Test003005",
+            "mainClass": "Test003036",
             "projectName": "Certification_490f2030"
         },
         {
             "type": "java",
-            "name": "Test003006",
+            "name": "Test003035",
             "request": "launch",
-            "mainClass": "Test003006",
+            "mainClass": "Test003035",
             "projectName": "Certification_490f2030"
         },
         {
             "type": "java",
-            "name": "Test003007",
+            "name": "Sport",
             "request": "launch",
-            "mainClass": "Test003007",
+            "mainClass": "Sport",
             "projectName": "Certification_490f2030"
         },
         {
             "type": "java",
-            "name": "Test003008",
+            "name": "Student",
             "request": "launch",
-            "mainClass": "Test003008",
+            "mainClass": "Student",
             "projectName": "Certification_490f2030"
         },
         {
             "type": "java",
-            "name": "Test003009",
+            "name": "Employee",
             "request": "launch",
-            "mainClass": "Test003009",
+            "mainClass": "Employee",
             "projectName": "Certification_490f2030"
         },
         {
             "type": "java",
-            "name": "Test003010",
+            "name": "employee",
             "request": "launch",
-            "mainClass": "Test003010",
+            "mainClass": "employee",
             "projectName": "Certification_490f2030"
         },
         {
             "type": "java",
-            "name": "Test003011",
+            "name": "Emp",
             "request": "launch",
-            "mainClass": "Test003011",
+            "mainClass": "Emp",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "emp",
+            "request": "launch",
+            "mainClass": "emp",
             "projectName": "Certification_490f2030"
         }
     ]

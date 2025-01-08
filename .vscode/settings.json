@@ -1,5 +1,16 @@
 {
     "java.project.sourcePaths": [
+        "_Test/src",
+        "Test003056/src",
+        "Test003054/src",
+        "Test003053/src",
+        "Test003052/src",
+        "Test003051/src",
+        "Test003050/src",
+        "Test003048/src",
+        "Test003047/src",
+        "Test003046/src",
+        "Test003044/src",
         "Test003042/src",
         "Test003041/src",
         "Test003040/src",
@@ -9,7 +20,7 @@
         "Test003035/src",
         "Test003034/src",
         "Test003033/src",
-        "Test003044/src"
+        "Test003057/src"
     ],
     "java.project.referencedLibraries": []
 }

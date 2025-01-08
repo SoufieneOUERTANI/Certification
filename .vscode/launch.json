@@ -6,6 +6,83 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Test003057",
+            "request": "launch",
+            "mainClass": "Test003057",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "Test003056",
+            "request": "launch",
+            "mainClass": "Test003056",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "Test003054",
+            "request": "launch",
+            "mainClass": "Test003054",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "Test003053",
+            "request": "launch",
+            "mainClass": "Test003053",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "Test003052",
+            "request": "launch",
+            "mainClass": "Test003052",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "Test003051",
+            "request": "launch",
+            "mainClass": "Test003051",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "Test003050",
+            "request": "launch",
+            "mainClass": "Test003050",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "Test003048",
+            "request": "launch",
+            "mainClass": "Test003048",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "Test003047",
+            "request": "launch",
+            "mainClass": "Test003047",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
+            "name": "Test003046",
+            "request": "launch",
+            "mainClass": "Test003046",
+            "projectName": "Certification_490f2030"
+        },
+        {
+            "type": "java",
             "name": "Person",
             "request": "launch",
             "mainClass": "Person",
